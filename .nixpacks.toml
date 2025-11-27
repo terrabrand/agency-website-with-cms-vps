@@ -1,0 +1,14 @@
+[phases.setup]
+commands = ["echo 'Setting up Nixpacks environment'"]
+
+[phases.install]
+commands = ["npm ci"]
+
+[phases.build]
+commands = ["npm run build"]
+
+[phases.start]
+commands = ["npm run preview"]
+
+[env]
+NODE_VERSION = "20"
